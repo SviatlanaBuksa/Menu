@@ -1,2 +1,67 @@
 :root {
+  --primary-color: #102a42;
+  --accent-color: #c59d5f;
+  --transition: all 0.3s linear;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  background-color: #f1f5f8;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: var(--primary-color);
+  line-height: 1.25;
+  margin-top: 5rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+hr {
+  width: 4.5rem;
+  height: 4px;
+  background-color: var(--accent-color);
+  border: none;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+li {
+  list-style-type: none;
+  margin: 0 5px;
+}
+
+button {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+  border-color: var(--accent-color);
+  background-color: transparent;
+  color: var(--accent-color);
+  transition: var(--transition);
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+img {
+  overflow: clip;
+  display: block;
+  height: 150px;
+  object-fit: cover;
+  border: 0.25rem solid var(--accent-color);
+  border-radius: 0.5rem;
 }
