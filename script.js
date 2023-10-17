@@ -76,7 +76,11 @@ const menu = [
 const containerCenter = document.querySelector(".container-center");
 
 window.addEventListener("DOMContentLoaded", function () {
-  let displayMenu = menu.map(function (item) {
+  displayMenuItem(menu);
+});
+
+function displayMenuItem(menuItem) {
+  let displayMenu = menuItem.map(function (item) {
     return `<article class="meal-item">
         <img src=${item.img} alt=${item.title} />
         <div class="meal-info">
@@ -92,7 +96,5 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   displayMenu = displayMenu.join("");
-  console.log(displayMenu);
-
   containerCenter.innerHTML = displayMenu;
-});
+}
